@@ -34,7 +34,7 @@
 		regulator-name = "v3v3";
 		regulator-min-microvolt = <3300000>;
 		regulator-max-microvolt = <3300000>;
-		regulator-always-on;
+		//regulator-always-on;
 	};
 
 	vdd: vdd {
@@ -42,6 +42,7 @@
 		regulator-name = "vdd";
 		regulator-min-microvolt = <3300000>;
 		regulator-max-microvolt = <3300000>;
+		//regulator-always-on;
 	};
 
 	vdd_ddr: vdd_ddr {
@@ -49,6 +50,7 @@
 		regulator-name = "vdd_ddr";
 		regulator-min-microvolt = <1350000>;
 		regulator-max-microvolt = <1350000>;
+		//regulator-always-on;
 	};
 
 	vddcore: vddcore {
@@ -56,6 +58,7 @@
 		regulator-name = "vddcore";
 		regulator-min-microvolt = <1350000>;
 		regulator-max-microvolt = <1350000>;
+		//regulator-always-on;
 	};
 
 	vdd_usb: vdd_usb {
@@ -63,6 +66,7 @@
 		regulator-name = "vdd_usb";
 		regulator-min-microvolt = <3300000>;
 		regulator-max-microvolt = <3300000>;
+		//regulator-always-on;
 	};
 };
 
@@ -87,7 +91,7 @@
 	i2c-scl-rising-time-ns = <185>;
 	i2c-scl-falling-time-ns = <20>;
 	clock-frequency = <400000>;
-	status = "okay";
+	status = "disabled";
 };
 
 &iwdg1 {
@@ -99,10 +103,11 @@
 	status = "okay";
 };
 
+/*
 &pwr_regulators {
 	vdd-supply = <&vdd>;
 	vdd_3v3_usbfs-supply = <&vdd_usb>;
-};
+};*/
 
 &rcc {
 	st,clksrc = <
