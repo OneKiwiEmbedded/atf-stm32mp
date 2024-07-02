@@ -9,7 +9,7 @@
 	i2c4_pins_a: i2c4-0 {
 		pins {
 			pinmux = <STM32_PINMUX('E', 15, AF6)>, /* I2C4_SCL */
-				 <STM32_PINMUX('B', 9, AF6)>; /* I2C4_SDA */
+				 <STM32_PINMUX('B', 7, AF6)>; /* I2C4_SDA */
 			bias-disable;
 			drive-open-drain;
 			slew-rate = <0>;
