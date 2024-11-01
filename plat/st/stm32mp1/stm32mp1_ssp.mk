@@ -1,10 +1,10 @@
 #
-# Copyright (c) 2015-2024, ARM Limited and Contributors. All rights reserved.
+# Copyright (c) 2015-2022, ARM Limited and Contributors. All rights reserved.
 #
 # SPDX-License-Identifier: BSD-3-Clause
 #
 
-ST_VERSION 		:=	r2.0-ssp
+ST_VERSION 		:=	r1.0-ssp
 VERSION_STRING		:=	v${VERSION_MAJOR}.${VERSION_MINOR}-${PLAT}-${ST_VERSION}(${BUILD_TYPE}):${BUILD_STRING}
 
 # Required to use BL2_IN_XIP_MEM
