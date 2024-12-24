@@ -1,0 +1,8 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR BSD-3-Clause)
+/*
+ * Copyright (C) OneKiwi 2024 - All Rights Reserved
+ * Author: Thanh Duong <thanh.duong.vs@gmail.com> for OneKiwi.
+ */
+
+#define DDR_SIZE	0x40000000 /* 1GB */
+#include "stm32mp15-fw-config.dtsi"
