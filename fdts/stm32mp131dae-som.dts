@@ -63,8 +63,8 @@
 	sdmmc2_d47_pins_x: sdmmc2-d47-x {
 		pins {
 			pinmux = <STM32_PINMUX('F', 0, AF10)>, /* SDMMC2_D4 */
-					 <STM32_PINMUX('C', 6, AF10)>, /* SDMMC2_D6 */
 					 <STM32_PINMUX('B', 9, AF10)>, /* SDMMC2_D5 */
+					 <STM32_PINMUX('C', 6, AF10)>, /* SDMMC2_D6 */
 					 <STM32_PINMUX('C', 7, AF10)>; /* SDMMC2_D7 */
 			slew-rate = <1>;
 			drive-push-pull;
@@ -313,7 +313,7 @@
 	no-sdio;
 	st,neg-edge;
 	bus-width = <8>;
-	vmmc-supply = <&v3v3>;
+	vmmc-supply = <&vdd>;
 	vqmmc-supply = <&vdd>;
 	mmc-ddr-3_3v;
 	status = "okay";
