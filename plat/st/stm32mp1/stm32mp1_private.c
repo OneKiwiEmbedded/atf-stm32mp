@@ -485,9 +485,20 @@ void stm32mp_get_soc_name(char name[STM32_SOC_NAME_SIZE])
 
 void stm32mp_print_cpuinfo(void)
 {
+	const char onekiwi_logo[] =
+"                                  \n"
+"  ____           __ _ _        _  \n"
+" / __ \\___  ___ / //_(_)    __(_)\n"
+"/ /_/ / _ \\/ -_) ,< / / |/|/ / / \n"
+"\\____/_//_/\\__/_/|_/_/|__,__/_/ \n"
+"                                  \n"
+" 2025 OneKiwi Technology Co., Ltd \n"
+"                                  \n";
+
 	char name[STM32_SOC_NAME_SIZE];
 
 	stm32mp_get_soc_name(name);
+	printf("%s", onekiwi_logo);
 	NOTICE("CPU: %s\n", name);
 }
 
